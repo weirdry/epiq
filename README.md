@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Epiq: Epic Quest Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Epiq transforms your ordinary todo list into an epic adventure. This React-based Progressive Web App (PWA) turns task management into a thrilling quest, making productivity feel like a game.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Epic Features
 
-## Expanding the ESLint configuration
+- Create quests (tasks) with titles, descriptions, and sub-quests
+- Embark on epic journeys (projects) filled with multiple quests
+- Level up your character by completing quests and gaining experience
+- Unlock achievements and earn rewards for consistent quest completion
+- Track your progress with a visually appealing quest log
+- Collaborate with fellow adventurers (team members) on group quests
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React with TypeScript
+- Vite for fast development and optimized builds
+- Firebase for backend and authentication
+- PWA for cross-platform compatibility
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To join the adventure locally:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+   ```
+   git clone https://github.com/weirdry/epiq.git
+   cd epiq
+   ```
+2. Install dependencies: `npm install`
+3. Set up a Firebase project and add your config to `.env` file
+4. Start your quest: `npm run dev`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Detailed setup instructions for fellow adventurers are available in the [Adventurer's Guide](SETUP.md) (to be created).
+
+## Project Goals
+
+- Create an engaging, gamified experience for task management
+- Implement a robust reward and progression system
+- Develop a visually appealing and intuitive user interface
+- Explore advanced React patterns and Firebase integration
+
+## Future Enhancements (Epic Expansions)
+
+- Daily challenges and boss battles (major project milestones)
+- Character customization and unique classes (productivity styles)
+- Guilds and leaderboards for team productivity
+- Integration with calendar for timed quests and events
+- Mobile app versions for on-the-go adventuring
+
+## Join the Epic Quest
+
+While Epiq is primarily a personal project, feedback and suggestions from fellow adventurers are always welcome. Feel free to open an issue or submit a pull request to contribute to this epic journey.
+
+## License
+
+[MIT](LICENSE) - Feel free to use this quest log for your own adventures!
